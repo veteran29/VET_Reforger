@@ -1,0 +1,15 @@
+SCR_BaseGameMode : "{0F307326459A1395}Prefabs/MP/Modes/GameMode_Base.et" {
+ ID "56B2B479C6B96951"
+ components {
+  VET_StealTheCarComponent "{596D291BDEF22814}" {
+  }
+ }
+ {
+  PerceptionManager "596D291BED70036B" : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+   ID "596D1CF262F631C8"
+  }
+  HitRegistrationManager "596D291BED700211" : "{0EDA3D48791120DD}Prefabs/MP/HitRegManager.et" {
+   ID "596D1CF262F631CA"
+  }
+ }
+}

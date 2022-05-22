@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{92FE421026BDAC45}Worlds/VET_StealTheCar_Regina.ent"
+ Configurations {
+  ENTResourceClass PC {
+  }
+  ENTResourceClass XBOX_ONE : PC {
+  }
+  ENTResourceClass XBOX_SERIES : PC {
+  }
+  ENTResourceClass PS4 : PC {
+  }
+  ENTResourceClass HEADLESS : PC {
+  }
+ }
+}

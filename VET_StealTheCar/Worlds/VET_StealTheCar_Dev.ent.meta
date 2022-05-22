@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{CAD0300309A7B191}Worlds/VET_StealTheCar_Dev.ent"
+ Configurations {
+  ENTResourceClass PC {
+  }
+  ENTResourceClass XBOX_ONE : PC {
+  }
+  ENTResourceClass XBOX_SERIES : PC {
+  }
+  ENTResourceClass PS4 : PC {
+  }
+  ENTResourceClass HEADLESS : PC {
+  }
+ }
+}

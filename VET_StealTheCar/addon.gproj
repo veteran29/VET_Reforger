@@ -1,0 +1,9 @@
+GameProject {
+ ID "VETStealTheCar"
+ GUID "5966B6DD4444257A"
+ TITLE "VET_StealTheCar"
+ Dependencies {
+  "58D0FB3206B6F859"
+  "596D0483FFEE8F5F"
+ }
+}

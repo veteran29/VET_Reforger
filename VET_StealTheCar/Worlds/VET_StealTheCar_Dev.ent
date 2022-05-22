@@ -1,0 +1,6 @@
+SubScene {
+ Parent "{79B7209A804437AA}worlds/Dev/VET_dev.ent"
+}
+Layer gamemode {
+ Index 0
+}
