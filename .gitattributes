@@ -5,3 +5,5 @@
 *.tga binary
 *.rdb binary
 *.xob binary
+*.bterr binary
+*.ttile binary
