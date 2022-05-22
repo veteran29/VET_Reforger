@@ -1,0 +1,8 @@
+GameProject {
+ ID "VETCore"
+ GUID "596D0483FFEE8F5F"
+ TITLE "VET_Core"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}

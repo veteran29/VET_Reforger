@@ -1,0 +1,7 @@
+
+* text=auto
+*.png binary
+*.jpg binary
+*.tga binary
+*.rdb binary
+*.xob binary
