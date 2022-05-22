@@ -1,6 +1,8 @@
 SCR_BaseGameMode : "{0F307326459A1395}Prefabs/MP/Modes/GameMode_Base.et" {
  ID "56B2B479C6B96951"
  components {
+  SCR_RespawnHandlerComponent "{596D291A300E3E90}" {
+  }
   VET_StealTheCarComponent "{596D291BDEF22814}" {
   }
  }
