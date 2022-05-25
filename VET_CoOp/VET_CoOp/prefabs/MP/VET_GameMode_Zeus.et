@@ -1,3 +1,14 @@
 SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" {
  ID "56B2B479C6B96951"
+ components {
+  SCR_RespawnTimerComponent "{56C2DDA6EE0E4071}" {
+   m_fRespawnTime 15
+  }
+ }
+ {
+  ScriptedChatEntity {
+   ID "56E685E9EF952A67"
+   "Default channel" "Faction"
+  }
+ }
 }
