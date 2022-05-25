@@ -1,3 +1,5 @@
+SCR_AIWorld : "{6A2AD799530E1186}prefabs/SCR_AIWorld_Eden.et" {
+}
 SCR_GameModeEditor VET_GameMode_Zeus1 : "{C3105AD754907BCF}prefabs/MP/VET_GameMode_Zeus.et" {
  components {
   SCR_EditorRespawnBriefingComponent "{570245454BF91285}" {
@@ -10,7 +12,7 @@ SCR_GameModeEditor VET_GameMode_Zeus1 : "{C3105AD754907BCF}prefabs/MP/VET_GameMo
   }
  }
  {
-  SCR_FactionManager {
+  SCR_FactionManager FactionManager {
    ID "56E685E92F1B7E7A"
    Factions {
     SCR_Faction "{56DEAC40D132400B}" {
