@@ -1,0 +1,23 @@
+SCR_GameModeEditor VET_GameMode_Zeus1 : "{C3105AD754907BCF}prefabs/MP/VET_GameMode_Zeus.et" {
+ components {
+  SCR_EditorRespawnBriefingComponent "{570245454BF91285}" {
+   m_Info SCR_FormatUIInfo "{57024551E01725D4}" {
+    Name "01 FIA Uprising"
+   }
+  }
+  SCR_RespawnMenuHandlerComponent "{56C2E97AB5B2AC0C}" {
+   m_bAllowFactionSelection 0
+  }
+ }
+ {
+  SCR_FactionManager {
+   ID "56E685E92F1B7E7A"
+   Factions {
+    SCR_Faction "{56DEAC40D132400B}" {
+     m_bIsPlayable 1
+    }
+   }
+   m_bCanChangeFactionsPlayable 0
+  }
+ }
+}
