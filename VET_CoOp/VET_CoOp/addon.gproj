@@ -1,0 +1,8 @@
+GameProject {
+ ID "VETCoOp"
+ GUID "597207655052CA88"
+ TITLE "VET_CoOp"
+ Dependencies {
+  "58D0FB3206B6F859" "596D0483FFEE8F5F"
+ }
+}

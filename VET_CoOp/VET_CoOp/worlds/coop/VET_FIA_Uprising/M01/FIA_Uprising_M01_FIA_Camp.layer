@@ -1,0 +1,35 @@
+CommentEntity {
+ coords 7079.043 127.26 8365.656
+ m_Comment "FIA Camp"
+ m_Size 3
+ m_FaceCamera 1
+}
+StaticModelEntity : "{01AE5FD77A9A4C21}Prefabs/Structures/Military/Camps/TentSmallUS_01/TentSmallUS_01.et" {
+ coords 7077.262 95.079 8370.634
+ angleX 4.291
+ angleY -143.037
+ angleZ -1.243
+}
+GameEntity : "{328BE73FB04612AC}PrefabLibrary/Props/Civilian/Fireplace_01.et" {
+ components {
+  SCR_FireplaceComponent "{5876E7F288BF5C8E}" {
+   m_eInitialLightState LIT
+  }
+ }
+ coords 7078.698 95.028 8365.085
+ angleX 0.948
+ angleY 3.502
+ angleZ -0.839
+}
+GenericEntity : "{6105032F794BA64B}Prefabs/Props/Civilian/LogChopping_01.et" {
+ coords 7077.56 94.806 8364.754
+ angleX 0.895
+ angleY 0.014
+ angleZ 0.895
+}
+StaticModelEntity : "{75A7C06222E6218B}Prefabs/Structures/Military/Camps/TentSmallUSSR_01/TentSmallUSSR_01.et" {
+ coords 7073.652 95.22 8366.904
+ angleX -4.944
+ angleY 73.116
+ angleZ 5.213
+}

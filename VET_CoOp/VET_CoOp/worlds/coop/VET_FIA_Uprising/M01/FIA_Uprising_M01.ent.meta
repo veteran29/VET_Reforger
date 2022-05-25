@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{3C9DCA628EA79732}worlds/coop/VET_FIA_Uprising/M01/FIA_Uprising_M01.ent"
+ Configurations {
+  ENTResourceClass PC {
+  }
+  ENTResourceClass XBOX_ONE : PC {
+  }
+  ENTResourceClass XBOX_SERIES : PC {
+  }
+  ENTResourceClass PS4 : PC {
+  }
+  ENTResourceClass HEADLESS : PC {
+  }
+ }
+}

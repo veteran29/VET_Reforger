@@ -1,0 +1,10 @@
+SCR_SpawnPoint SpawnPoint_FIA_Camp : "{72713ED566A531F3}PrefabsEditable/SpawnPoints/E_SpawnPoint_FIA.et" {
+ coords 7077.489 95.051 8366.261
+ m_fSpawnRadius 4
+ m_fNoPlayerRadius 0
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "FIA Camp"
+  Description "Small FIA camp hidden in the woods."
+  Icon "{6EC7134BE266266C}UI/Textures/UserActions/campfireaction.edds"
+ }
+}

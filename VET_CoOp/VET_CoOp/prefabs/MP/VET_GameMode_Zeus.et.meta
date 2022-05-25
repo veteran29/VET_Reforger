@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{C3105AD754907BCF}Prefabs/MP/Modes/Editor/VET_GameMode_Zeus.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
