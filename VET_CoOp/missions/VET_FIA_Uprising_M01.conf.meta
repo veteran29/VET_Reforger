@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{2F65CA3EA6F0A8C0}missions/VET_FIA_Uprising_M01.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}
