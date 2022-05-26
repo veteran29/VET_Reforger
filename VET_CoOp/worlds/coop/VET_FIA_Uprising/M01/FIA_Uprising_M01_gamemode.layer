@@ -8,7 +8,6 @@ SCR_GameModeEditor VET_GameMode_Zeus1 : "{C3105AD754907BCF}prefabs/MP/VET_GameMo
    }
   }
   SCR_RespawnMenuHandlerComponent "{56C2E97AB5B2AC0C}" {
-   m_bAllowFactionSelection 0
   }
  }
  {
@@ -19,7 +18,6 @@ SCR_GameModeEditor VET_GameMode_Zeus1 : "{C3105AD754907BCF}prefabs/MP/VET_GameMo
      m_bIsPlayable 1
     }
    }
-   m_bCanChangeFactionsPlayable 0
   }
  }
 }

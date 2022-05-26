@@ -9,8 +9,11 @@ SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_
     Icon "{8485D33991424756}UI/Textures/Editor/Logos/Logo_Editor_256x256.edds"
    }
   }
+  SCR_RespawnMenuHandlerComponent "{56C2E97AB5B2AC0C}" {
+   m_bAllowQuickDeploy 0
+   m_fMenuOpenDelay 5
+  }
   SCR_RespawnTimerComponent "{56C2DDA6EE0E4071}" {
-   m_fRespawnTime 15
   }
  }
  m_bAutoInitEditor 0
