@@ -11,8 +11,9 @@ trim_trailing_whitespace = true
 [*.c]
 indent_style = tab
 
-[*.{ent,*.meta,layer}]
+[*.{ent,et,*.meta,layer}]
 indent_size = 1
+insert_final_newline = false
 
 [*.md]
 trim_trailing_whitespace = false
