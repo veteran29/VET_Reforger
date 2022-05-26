@@ -17,6 +17,7 @@ SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_
   }
  }
  m_bAutoInitEditor 0
+ m_openEditorAfterDeath 0
  {
   ScriptedChatEntity {
    ID "56E685E9EF952A67"
