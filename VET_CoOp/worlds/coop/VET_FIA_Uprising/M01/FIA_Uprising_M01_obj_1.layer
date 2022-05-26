@@ -1,0 +1,89 @@
+$grp SCR_AIWaypoint : "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et" {
+ WP_obj1_out_patrol_1 {
+  coords 7595.136 28.633 8338.792
+  angleX -3.545
+  angleY -0.333
+  angleZ 5.366
+  CompletionRadius 15
+ }
+ WP_obj1_out_patrol_2 {
+  coords 7546.137 31.99 8373.59
+  angleX 0.004
+  angleY -0.055
+  angleZ 4.467
+  CompletionRadius 10
+ }
+ WP_obj1_out_patrol_3 {
+  coords 7448.17 41.693 8266.344
+  angleX 6.242
+  angleY -0.209
+  angleZ -0.023
+  CompletionRadius 10
+ }
+ WP_obj1_out_patrol_4 {
+  coords 7525.323 26.704 8153.074
+  angleX 7.961
+  angleY 0.57
+  angleZ 4.503
+  CompletionRadius 10
+ }
+ WP_obj1_out_patrol_5 {
+  coords 7615.625 25.87 8270.98
+  angleX 3.475
+  angleY 0.649
+  angleZ 8.903
+  CompletionRadius 10
+ }
+}
+AIWaypointCycle WP_obj1_out_patrol_cycle : "{35BD6541CBB8AC08}Prefabs/AI/Waypoints/AIWaypoint_Cycle.et" {
+ coords 7625.053 24.054 8272.623
+ CycleWaypoints {
+  "WP_obj1_out_patrol_1" "WP_obj1_out_patrol_2" "WP_obj1_out_patrol_3" "WP_obj1_out_patrol_4" "WP_obj1_out_patrol_5" "WP_obj1_out_patrol_6"
+ }
+}
+SCR_AIGroup GRP_out_patrol_1 : "{43C7A28EEB660FF8}Prefabs/Groups/OPFOR/Group_USSR_Team_GL.et" {
+ components {
+  SCR_AIConfigComponent "{512CC1759AE69D6D}" {
+   m_EnableLeaderStop 1
+  }
+ }
+ coords 7625.278 23.785 8272.312
+ m_aUnitPrefabSlots {
+  "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et" "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et" "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
+ }
+ m_aStaticWaypoints {
+  "WP_obj1_out_patrol_cycle"
+ }
+}
+$grp SCR_AIGroup : "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" {
+ {
+  components {
+   AIBehaviorTreeComponent "{13BAA835864B8992}" {
+   }
+  }
+  coords 7444.946 44.231 8289.293
+  DangerEventRange 50
+  m_aStaticWaypoints {
+   "WP_obj1_gate"
+  }
+ }
+ {
+  coords 7539.134 39.856 8370.887
+  angleY 38.868
+  DangerEventRange 50
+  m_bSnapToTerrain 0
+  m_aStaticWaypoints {
+   "WP_obj1_tower"
+  }
+ }
+}
+$grp SCR_DefendWaypoint : "{D9C14ECEC9772CC6}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Defend.et" {
+ WP_obj1_gate {
+  coords 7448.759 44.257 8286.588
+  CompletionRadius 10
+ }
+ WP_obj1_tower {
+  coords 7541.328 32.961 8367.603
+  CompletionRadius 10
+ }
+}

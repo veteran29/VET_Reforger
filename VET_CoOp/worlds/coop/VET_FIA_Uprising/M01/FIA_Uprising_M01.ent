@@ -4,15 +4,12 @@ SubScene {
 Layer default {
  Index 0
 }
-Layer managers {
- Index 1
+Layer obj_1 {
+ Index 5
 }
 Layer FIA_Camp {
  Index 2
 }
 Layer respawns {
  Index 3
-}
-Layer gamemode {
- Index 4
 }
