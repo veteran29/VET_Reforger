@@ -9,7 +9,15 @@ SCR_GameModeEditor VET_GameMode_Zeus1 : "{C3105AD754907BCF}prefabs/MP/VET_GameMo
     Name "01 FIA Uprising"
    }
   }
+  SCR_InitWeatherComponent "{58DCAB6D83A0CB17}" {
+   m_iSetWeatherConstant 0
+  }
   SCR_RespawnMenuHandlerComponent "{56C2E97AB5B2AC0C}" {
+  }
+  VET_InitTimeComponent "{5976B4012485D0E9}" {
+   m_initialHour 5
+   m_initialMinute 41
+   m_initialSeconds 30
   }
  }
  {
