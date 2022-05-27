@@ -41,22 +41,104 @@ AIWaypointCycle WP_obj1_out_patrol_cycle : "{35BD6541CBB8AC08}Prefabs/AI/Waypoin
   "WP_obj1_out_patrol_1" "WP_obj1_out_patrol_2" "WP_obj1_out_patrol_3" "WP_obj1_out_patrol_4" "WP_obj1_out_patrol_5" "WP_obj1_out_patrol_6"
  }
 }
-SCR_AIGroup GRP_out_patrol_1 : "{43C7A28EEB660FF8}Prefabs/Groups/OPFOR/Group_USSR_Team_GL.et" {
- components {
-  SCR_AIConfigComponent "{512CC1759AE69D6D}" {
-   m_EnableLeaderStop 1
+$grp SCR_AIGroup : "{43C7A28EEB660FF8}Prefabs/Groups/OPFOR/Group_USSR_Team_GL.et" {
+ GRP_obj1_patrol_1 {
+  components {
+   SCR_AIConfigComponent "{512CC1759AE69D6D}" {
+    m_EnableLeaderStop 1
+   }
+  }
+  coords 7625.278 23.785 8272.312
+  m_aUnitPrefabSlots {
+   "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et" "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et" "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
+  }
+  m_aStaticWaypoints {
+   "WP_obj1_out_patrol_cycle"
   }
  }
- coords 7625.278 23.785 8272.312
- m_aUnitPrefabSlots {
-  "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et" "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et" "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
- }
- m_aStaticWaypoints {
-  "WP_obj1_out_patrol_cycle"
+ GRP_obj1_def_3 {
+  coords 7684.949 13.546 8183.904
+  DangerEventRange 50
+  m_aStaticWaypoints {
+   "WP_obj1_base"
+  }
  }
 }
+GameEntity : "{616F4E93658E5A3A}Prefabs/Props/Military/Generators/GeneratorFloodlight_USSR_01.et" {
+ components {
+  SoundComponent "{5616C184B222FC96}" {
+   Enabled 0
+  }
+  SCR_BaseInteractiveLightComponent "{5882B9E6B4EFC9DF}" {
+   m_eInitialLightState LIT
+  }
+  ActionsManagerComponent "{5616C184B222FC92}" {
+   Enabled 0
+  }
+ }
+ coords 7394.242 21.576 9577.33
+ angleY 158.746
+}
+SCR_AIGroup GRP_obj1_gate_btr : "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et" {
+ coords 7635.607 13.455 8060.403
+ angleY -37.543
+ m_aUnitPrefabSlots {
+  "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+ }
+ m_aStaticWaypoints {
+  "WP_obj1_getin_gate"
+ }
+ m_aStaticVehicles {
+  "vBTR_obj1_gate"
+ }
+}
+GameEntity : "{723870DBB19D30B0}Prefabs/Weapons/Tripods/Tripod_6T5_PKM.et" {
+ coords 7677.901 13.849 8120.079
+ angleY -57.14
+}
+$grp SCR_AIGroup : "{96BAB56E6558788E}Prefabs/Groups/OPFOR/Group_USSR_Team_AT.et" {
+ GRP_obj1_def_1 {
+  coords 7672.996 13.695 8110.204
+  DangerEventRange 50
+  m_aStaticWaypoints {
+   "WP_obj1_base"
+  }
+ }
+ GRP_obj1_def_2 {
+  coords 7724.403 13.608 8145.407
+  angleY -112.334
+  DangerEventRange 50
+  m_aStaticWaypoints {
+   "WP_obj1_base"
+  }
+ }
+}
+SCR_BoardingWaypoint WP_obj1_getin_gate : "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et" {
+ coords 7633.77 15.23 8059.368
+ CompletionRadius 6
+ m_bIsPriority 1
+ m_bCargoAllowed 0
+}
+Vehicle vBTR_obj1_gate : "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et" {
+ components {
+  FuelManagerComponent "{5622A70CD78A9E2C}" {
+   FuelNodes {
+    SCR_FuelNode "{5622A70CD4036C5A}" {
+     m_fInitialFuelTankState 0
+    }
+   }
+  }
+  SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+   m_fVehicleDestroyDamage 22624.699
+  }
+ }
+ coords 7633.39 13.89 8059.194
+ angleX 1.749
+ angleY -33.392
+ angleZ -2.223
+}
 $grp SCR_AIGroup : "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" {
- {
+ GRP_obj1_gate {
   components {
    AIBehaviorTreeComponent "{13BAA835864B8992}" {
    }
@@ -67,13 +149,44 @@ $grp SCR_AIGroup : "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam
    "WP_obj1_gate"
   }
  }
- {
-  coords 7539.134 39.856 8370.887
-  angleY 38.868
+ GRP_obj1_tower {
+  components {
+   AIFormationComponent "{507E9DC12F541FE6}" {
+    DefaultFormation "Column"
+   }
+   AIGroupMovementComponent "{55C4E4E28D6EA047}" {
+    Enabled 0
+   }
+   AIGroupSteeringComponent "{55C4E4E29127F05A}" {
+    Enabled 0
+   }
+   AIPathfindingComponent "{518A98842FFC190E}" {
+    Enabled 0
+   }
+   SCR_AIConfigComponent "{512CC1759AE69D6D}" {
+    m_EnableMovement 0
+   }
+  }
+  coords 7538.872 39.518 8370.894
+  angleY -96.306
   DangerEventRange 50
   m_bSnapToTerrain 0
-  m_aStaticWaypoints {
-   "WP_obj1_tower"
+ }
+ GRP_lh_sniper {
+  components {
+   AIGroupMovementComponent "{55C4E4E28D6EA047}" {
+   }
+   SCR_AIConfigComponent "{512CC1759AE69D6D}" {
+    m_Skill 1
+    m_EnableMovement 0
+    m_EnableDangerEvents 0
+    m_EnableTakeCover 0
+   }
+  }
+  coords 7393.426 22.726 9575.054
+  angleY 158.802
+  m_aUnitPrefabSlots {
+   "{976AC400219898FA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Sharpshooter.et"
   }
  }
 }
@@ -82,8 +195,18 @@ $grp SCR_DefendWaypoint : "{D9C14ECEC9772CC6}PrefabsEditable/Auto/AI/Waypoints/E
   coords 7448.759 44.257 8286.588
   CompletionRadius 10
  }
- WP_obj1_tower {
-  coords 7541.328 32.961 8367.603
-  CompletionRadius 10
+ WP_obj1_base {
+  components {
+   SCR_WaypointAreaMeshComponent "{564255F975BC8D0F}" {
+   }
+  }
+  coords 7657.715 16.468 8145.611
+  angleX -2.668
+  angleY 0.208
+  angleZ -4.472
+  CompletionRadius 70
  }
+}
+GenericEntity : "{F03EAAE51C256CFA}Prefabs/Items/Equipment/Accessories/Pouch_Soviet_100rnd_PKM/Pouch_Soviet_100rnd_PKM.et" {
+ coords 7676.179 13.849 8118.568
 }

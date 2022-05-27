@@ -1,0 +1,61 @@
+$grp Vehicle : "{4C81D7ED8F8C0D87}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tanker.et" {
+ obj1_tgt_1 {
+  components {
+   BaseVehicleNodeComponent "{20FB66C5B2237133}" {
+    components {
+     SCR_CarControllerComponent "{20FB66C5BC92275B}" {
+      MaxStartupTime 5
+      EngineStartupChance 10
+     }
+    }
+   }
+   FuelManagerComponent "{5622A70CD78A9E2C}" {
+    FuelNodes {
+     SCR_FuelNode "{5622A70CD4036C5A}" {
+      m_fInitialFuelTankState 0
+     }
+     SCR_FuelNode "{5628CA84B129D4CE}" {
+      m_fInitialFuelTankState 0.5
+     }
+    }
+   }
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 21809.699
+   }
+  }
+  coords 7699.169 12.97 8086.847
+  angleY -41.293
+ }
+ obj1_tgt_2 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 21809.699
+   }
+   ActionsManagerComponent "{C97BE5489221AE18}" {
+    Enabled 0
+   }
+  }
+  coords 7692.446 12.97 8080.562
+  angleY -57.491
+ }
+}
+DecalEntity : "{B38FBA56FA69E392}Prefabs/Decals/Fluids/Decal_OilStain_01_large.et" {
+ coords 7690.182 0.001 8079.383
+ angleX -90
+ angleY -180
+ angleZ -180
+}
+$grp DecalEntity : "{D53741D03AB3A652}Prefabs/Decals/Fluids/Decal_OilStain_01_extralarge.et" {
+ {
+  coords 7691.245 0.001 8079.634
+  angleX -90
+  angleY -180
+  angleZ -180
+ }
+ {
+  coords 7693.788 0.001 8087.294
+  angleX -90
+  angleY -180
+  angleZ -180
+ }
+}

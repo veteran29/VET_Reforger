@@ -13,3 +13,6 @@ Layer FIA_Camp {
 Layer respawns {
  Index 3
 }
+Layer obj1_task {
+ Index 1
+}
