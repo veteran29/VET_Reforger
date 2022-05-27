@@ -15,6 +15,8 @@ SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_
   }
   SCR_RespawnTimerComponent "{56C2DDA6EE0E4071}" {
   }
+  VET_InitTimeComponent "{5976B4012485D0E9}" {
+  }
  }
  m_bAutoInitEditor 0
  m_openEditorAfterDeath 0
