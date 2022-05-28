@@ -14,6 +14,9 @@ class VET_InitTimeComponent : SCR_BaseGameModeComponent
 	[Attribute(defvalue: "0", desc: "Takes float up to 60 (seconds) and is used to set the inital time.", params: "0 60")]
 	protected int m_initialSeconds;
 	
+	[Attribute(defvalue: "1", desc: "Takes float up to 12 (multiplier) and is used to set the time multiplier.", params: "0.1 12")]
+	protected float m_timeMultiplier;
+	
 	//~ Sets initial time state when server is first loaded.
 	protected void InitTimeServer()
 	{
@@ -28,6 +31,9 @@ class VET_InitTimeComponent : SCR_BaseGameModeComponent
 		}
 		
 		timeManager.SetTime(new TimeContainer(m_initialHour, m_initialMinute, m_initialSeconds));
+		
+		float dayDuration = timeManager.GetDayDuration();
+		timeManager.SetDayDuration(dayDuration / m_timeMultiplier);
 	}
 	
 	override void EOnInit(IEntity owner)
