@@ -33,3 +33,5 @@ SCR_GameModeEditor VET_GameMode_Zeus1 : "{C3105AD754907BCF}prefabs/MP/VET_GameMo
   }
  }
 }
+VET_FIA_Uprising_M01_Flow {
+}
