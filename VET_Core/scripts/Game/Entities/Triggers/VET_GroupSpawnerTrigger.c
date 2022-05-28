@@ -5,6 +5,9 @@ class VET_GroupSpawnerTriggerClass: SCR_BaseTriggerEntityClass
 
 class VET_GroupSpawnerTrigger: SCR_BaseTriggerEntity
 {
+	[Attribute(defvalue: "1", desc: "When true, group members will be not spawned, even if its Spawn Immediately attribute is enabled", category: "Group Members")]
+	private bool m_overwriteSpawnImmediately;
+	
 	protected ref array<SCR_AIGroup> m_groupsToSpawn = {};
 	
 	void VET_GroupSpawnerTrigger(IEntitySource src, IEntity parent)
@@ -30,10 +33,13 @@ class VET_GroupSpawnerTrigger: SCR_BaseTriggerEntity
 			SCR_AIGroup group = SCR_AIGroup.Cast(child);
 			if (group)
 			{
+				if (m_overwriteSpawnImmediately && GetGame().InPlayMode())
+					group.VET_SetSpawnImmediately(false);	
+				
 				m_groupsToSpawn.Insert(group);
 			}
 			
-			child = GetSibling();
+			child = child.GetSibling();
 		}
 
 		#ifdef WORKBENCH	
