@@ -1,3 +1,5 @@
+SCR_MapEntity MapEntity_Everon1 : "{E1B88C66BF6CA1F9}Prefabs/World/Game/MapEntity_Everon.et" {
+}
 SCR_AIWorld : "{6A2AD799530E1186}prefabs/SCR_AIWorld_Eden.et" {
 }
 PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {

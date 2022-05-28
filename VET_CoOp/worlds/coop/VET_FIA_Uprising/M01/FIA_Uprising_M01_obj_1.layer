@@ -1,3 +1,18 @@
+$grp CommentEntity {
+ {
+  coords 7394.17 34.232 9575.887
+  m_Comment "Sniper guy"
+  m_Size 0.8
+  m_ScaleByDistance 1
+  m_FaceCamera 1
+ }
+ {
+  coords 7252.088 68.013 7676.027
+  m_Comment "QRF Spawn"
+  m_ScaleByDistance 1
+  m_FaceCamera 1
+ }
+}
 $grp SCR_AIWaypoint : "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et" {
  WP_obj1_out_patrol_1 {
   coords 7595.136 28.633 8338.792
@@ -41,6 +56,31 @@ AIWaypointCycle WP_obj1_out_patrol_cycle : "{35BD6541CBB8AC08}Prefabs/AI/Waypoin
   "WP_obj1_out_patrol_1" "WP_obj1_out_patrol_2" "WP_obj1_out_patrol_3" "WP_obj1_out_patrol_4" "WP_obj1_out_patrol_5" "WP_obj1_out_patrol_6"
  }
 }
+VET_GroupSpawnerTrigger SPAWNER_obj1_qrf_1 : "{37C7F2255A1AAE99}prefabs/Triggers/VET_GroupSpawnerTrigger.et" {
+ coords 7559.797 41.802 8243.729
+ SphereRadius 150
+ {
+  SCR_AIGroup GRP_obj1_qrf_2 : "{1C0502B5729E7231}Prefabs/Groups/OPFOR/Group_USSR_Team_Suppress.et" {
+   coords -322.695 5.827 -548.823
+   angleY -25.551
+   m_aStaticWaypoints {
+    "WP_obj1_qrf_2"
+   }
+  }
+  SCR_AIGroup GRP_obj1_qrf_1 : "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et" {
+   coords -286.231 4.34 -551.945
+   m_aStaticWaypoints {
+    "WP_obj1_qrf_1"
+   }
+  }
+  SCR_AIGroup GRP_obj1_qrf_3 : "{96BAB56E6558788E}Prefabs/Groups/OPFOR/Group_USSR_Team_AT.et" {
+   coords -311.859 5.145 -575.448
+   m_aStaticWaypoints {
+    "WP_obj1_qrf_3"
+   }
+  }
+ }
+}
 $grp SCR_AIGroup : "{43C7A28EEB660FF8}Prefabs/Groups/OPFOR/Group_USSR_Team_GL.et" {
  GRP_obj1_patrol_1 {
   components {
@@ -60,7 +100,7 @@ $grp SCR_AIGroup : "{43C7A28EEB660FF8}Prefabs/Groups/OPFOR/Group_USSR_Team_GL.et
   coords 7684.949 13.546 8183.904
   DangerEventRange 50
   m_aStaticWaypoints {
-   "WP_obj1_base"
+   "WP_obj1_def_3"
   }
  }
 }
@@ -101,7 +141,7 @@ $grp SCR_AIGroup : "{96BAB56E6558788E}Prefabs/Groups/OPFOR/Group_USSR_Team_AT.et
   coords 7672.996 13.695 8110.204
   DangerEventRange 50
   m_aStaticWaypoints {
-   "WP_obj1_base"
+   "WP_obj1_def_1"
   }
  }
  GRP_obj1_def_2 {
@@ -109,7 +149,7 @@ $grp SCR_AIGroup : "{96BAB56E6558788E}Prefabs/Groups/OPFOR/Group_USSR_Team_AT.et
   angleY -112.334
   DangerEventRange 50
   m_aStaticWaypoints {
-   "WP_obj1_base"
+   "WP_obj1_def_2"
   }
  }
 }
@@ -136,6 +176,9 @@ Vehicle vBTR_obj1_gate : "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70
  angleX 1.749
  angleY -33.392
  angleZ -2.223
+}
+SCR_AIWaypoint : "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et" {
+ coords 7365.525 49.96 8381.068
 }
 $grp SCR_AIGroup : "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et" {
  GRP_obj1_gate {
@@ -195,16 +238,31 @@ $grp SCR_DefendWaypoint : "{D9C14ECEC9772CC6}PrefabsEditable/Auto/AI/Waypoints/E
   coords 7448.759 44.257 8286.588
   CompletionRadius 10
  }
- WP_obj1_base {
-  components {
-   SCR_WaypointAreaMeshComponent "{564255F975BC8D0F}" {
-   }
-  }
-  coords 7657.715 16.468 8145.611
-  angleX -2.668
-  angleY 0.208
-  angleZ -4.472
-  CompletionRadius 70
+ WP_obj1_def_1 {
+  coords 7683.678 15.843 8105.352
+  CompletionRadius 43.4
+ }
+ WP_obj1_def_2 {
+  coords 7732.132 13.136 8152.146
+  CompletionRadius 30.8
+ }
+ WP_obj1_def_3 {
+  coords 7709.478 13.239 8125.19
+  CompletionRadius 31.8
+ }
+}
+$grp SCR_TimedWaypoint : "{EE9A99488B40628B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_SearchAndDestroy.et" {
+ WP_obj1_qrf_1 {
+  coords 7492.124 32.613 8209.483
+  CompletionRadius 36.3
+ }
+ WP_obj1_qrf_2 {
+  coords 7553.469 32.09 8266.503
+  CompletionRadius 36.3
+ }
+ WP_obj1_qrf_3 {
+  coords 7565.629 19.33 8106.504
+  CompletionRadius 36.3
  }
 }
 GenericEntity : "{F03EAAE51C256CFA}Prefabs/Items/Equipment/Accessories/Pouch_Soviet_100rnd_PKM/Pouch_Soviet_100rnd_PKM.et" {

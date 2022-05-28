@@ -1,0 +1,29 @@
+SCR_AIGroup GRP_patrol_1 : "{1C0502B5729E7231}Prefabs/Groups/OPFOR/Group_USSR_Team_Suppress.et" {
+ coords 6806.594 88.867 8166.464
+ angleY 39.286
+ DangerEventRange 100
+ m_aStaticVehicles {
+  "vUAZ_patrol_1"
+ }
+}
+Vehicle vUAZ_patrol_1 : "{259EE7B78C51B624}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469.et" {
+ components {
+  BaseLightManagerComponent "{51E210F17D2534F7}" {
+   LightSlots {
+    BaseLightSlot "{51E210F3B1CB7E19}" {
+     LightState 1
+    }
+    BaseLightSlot "{51E210F3B0547F5D}" {
+     LightState 1
+    }
+   }
+  }
+  SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+   m_fVehicleDestroyDamage 11880.1
+  }
+ }
+ coords 6809.53 89.812 8163.783
+ angleX -11.081
+ angleY 50.483
+ angleZ -2.304
+}

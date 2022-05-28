@@ -16,3 +16,9 @@ Layer respawns {
 Layer obj1_task {
  Index 1
 }
+Layer patrols {
+ Index 4
+}
+Layer obj2_task {
+ Index 6
+}

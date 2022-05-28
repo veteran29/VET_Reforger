@@ -1,0 +1,21 @@
+Vehicle UAZ1 : "{259EE7B78C51B624}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469.et" {
+ components {
+  BaseLightManagerComponent "{51E210F17D2534F7}" {
+   LightSlots {
+    BaseLightSlot "{51E210F3B1CB7E19}" {
+     LightState 1
+    }
+    BaseLightSlot "{51E210F3B0547F5D}" {
+     LightState 1
+    }
+   }
+  }
+  SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+   m_fVehicleDestroyDamage 11880.1
+  }
+ }
+ coords 6809.53 89.812 8163.783
+ angleX -11.081
+ angleY 50.483
+ angleZ -2.304
+}

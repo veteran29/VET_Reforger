@@ -1,0 +1,43 @@
+CommentEntity {
+ coords 6478.87 202.566 6898.655
+ m_Comment "Deliver ammo ural here?"
+ m_Size 0.9
+ m_ScaleByDistance 1
+ m_FaceCamera 1
+}
+GenericEntity MRK_FIA_Base {
+ components {
+  SCR_MapDescriptorComponent "{5978E966CC822722}" {
+   DisplayName "FIA Main Base"
+   MainType "Icon (generic)"
+   Scale 1
+   Faction 2
+  }
+  RplComponent "{5978E966C7882113}" {
+   Streamable Disabled
+  }
+ }
+ coords 6451.074 148.853 6765.921
+}
+GameEntity : "{2521D0D11FB543C7}PrefabsEditable/Auto/Props/Civilian/E_Fireplace_01.et" {
+ components {
+  SCR_FireplaceComponent "{5876E7F288BF5C8E}" {
+   m_eInitialLightState LIT
+  }
+ }
+ coords 6456.851 149.754 6781.312
+ angleX 9.423
+ angleY 1.783
+ angleZ 10.767
+}
+VET_GroupSpawnerTrigger : "{37C7F2255A1AAE99}prefabs/Triggers/VET_GroupSpawnerTrigger.et" {
+ coords 6453.682 150.12 6780.303
+ SphereRadius 100
+ DrawShape 1
+ {
+  SCR_AIGroup : "{2E9C920C3ACA2C6F}Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et" {
+   coords 2.185 0.321 -1.175
+   angleY -71.617
+  }
+ }
+}

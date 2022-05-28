@@ -1,7 +1,8 @@
 CommentEntity {
  coords 7079.043 127.26 8365.656
  m_Comment "FIA Camp"
- m_Size 3
+ m_Size 0.5
+ m_ScaleByDistance 1
  m_FaceCamera 1
 }
 StaticModelEntity : "{01AE5FD77A9A4C21}Prefabs/Structures/Military/Camps/TentSmallUS_01/TentSmallUS_01.et" {
