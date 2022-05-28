@@ -1,0 +1,7 @@
+SCR_AIGroup {
+ ID "0000000000000001"
+ components {
+  Hierarchy "{5978CA58263395BF}" {
+  }
+ }
+}
