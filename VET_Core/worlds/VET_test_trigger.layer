@@ -1,0 +1,22 @@
+VET_GroupSpawnerTrigger GroupSpawner_Test_1 : "{37C7F2255A1AAE99}prefabs/Triggers/VET_GroupSpawnerTrigger.et" {
+ coords 100.659 0.001 149.292
+ DrawShape 1
+ ClassFilter "ChimeraCharacter"
+ {
+  $grp SCR_AIGroup : "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et" {
+   {
+    components {
+     Hierarchy "{59777DEA2C33C0F1}" {
+     }
+    }
+    coords -24.485 0.298 13.568
+   }
+   {
+    components {
+    }
+    coords 10.125 0 33.698
+    angleY 126.037
+   }
+  }
+ }
+}
