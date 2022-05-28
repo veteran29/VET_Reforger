@@ -1,0 +1,11 @@
+VET_GroupSpawnerTrigger {
+ ID "59777DEBA91F589E"
+ coords 110.76 0.001 125.907
+ TriggerShapeType Sphere
+ SphereRadius 50
+ ShapeColor 1 0.75 0 0.098
+ TriggerActivationType "First change"
+ PeriodicQueries 1
+ UpdatePeriod 5
+ ClassFilter "ChimeraCharcter"
+}
