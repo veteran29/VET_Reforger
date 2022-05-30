@@ -1,0 +1,25 @@
+$grp SCR_AIGroup : "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et" {
+ {
+  components {
+  }
+  coords 150.364 1.791 288.974
+  angleY 117.162
+  m_aStaticWaypoints {
+   "WP_move_1"
+  }
+ }
+ {
+  components {
+  }
+  coords 114.784 0 263.287
+  m_aSpawnedWaypoints {
+   SCR_WaypointPrefabLocation WP1 {
+    m_WPWorldLocation 244.535 0.001 203.4
+   }
+  }
+ }
+}
+SCR_AIWaypoint WP_move_1 : "{FFF9518F73279473}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Move.et" {
+ coords 244.535 0.001 239.529
+ CompletionRadius 5.5
+}
