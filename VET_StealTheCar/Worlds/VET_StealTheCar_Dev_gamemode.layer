@@ -1,5 +1,0 @@
-SCR_BaseGameMode VET_StealTheCarGameMode1 : "{585998DBAEF6E341}Prefabs/VET_StealTheCarGameMode.et" {
-}
-SCR_SpawnPoint : "{E7F4D5562F48DDE4}Prefabs/MP/Spawning/SpawnPoint_Base.et" {
- coords 4.346 0.001 6.246
-}

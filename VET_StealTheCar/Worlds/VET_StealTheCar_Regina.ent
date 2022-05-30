@@ -1,6 +1,0 @@
-SubScene {
- Parent "{ED226D6F75734E7F}Worlds/VET_StealTheCar_Core.ent"
-}
-Layer default {
- Index 0
-}
