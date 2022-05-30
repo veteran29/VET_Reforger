@@ -12,7 +12,7 @@
 
 ### Addons
 
-This repository contain multiple addons, each of those will be published separately on Bohemia Interactive workshop.
+This repository contain multiple addons, each of those will be published separately on Arma Reforger workshop.
 
 Please check respective README of each addon for more details.
 
