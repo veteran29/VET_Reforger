@@ -7,7 +7,7 @@ Core addon with additional functionalities for the World Editor, components and 
 
 ### Functionalities
 
-- VET_GroupSpawnerTrigger - simple AI spawner trigger, spawns groups placed as its chilren when it's activated. See test VET_Test world for usage example
+- VET_GroupSpawnerTrigger - simple AI spawner trigger, spawns groups placed as its children when it's activated. See test VET_Test world for usage example
 - VET_InitTimeComponent - gamemode component for setting mission start daytime and time multiplier
 
 ### Worlds
