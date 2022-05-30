@@ -14,14 +14,12 @@
 
 This repository contain multiple addons, each of those will be published separately on Bohemia Interactive workshop.
 
+Please check respective README of each addon for more details.
+
 #### [VET_Core](VET_Core)
 
 Core addon with additional functionalities for the World Editor, components and frameworks for mission making etc. you get the gist.
 
 #### [VET_CoOp](VET_CoOp)
 
-Addon with cooperative missions and gamemodes:
-
-- VET_GameMode_Zeus - Tweaked Editor (Game Master) gamemode which behaves more like Arma 3 Zeus. The "Game Master" <sup>(can we please go back to the "Zeus" name?)</sup> will have to select the faction and spawn like any other player
-
-- FIA_Uprising (heavy WIP) - Small CoOp/SP campaign where you play as a FIA cell which tries to push the russians off the Island of Everon. At the moment most of the VET_CoOp components are created for the needs of these missions.
+Addon with cooperative missions and gamemodes.
