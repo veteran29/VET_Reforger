@@ -7,3 +7,6 @@ Layer default {
 Layer trigger {
  Index 1
 }
+Layer groups {
+ Index 2
+}

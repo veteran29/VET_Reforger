@@ -3,6 +3,7 @@ GenericWorldEntity world {
  boundMins -100 0 -100
  boundMaxs 1124 20 1124
  blockSize 100 1500 100
+ SkyPreset "{816A2E9B7F594C5D}Terrains/Common/Sky/SkyBox/HDRi_Neutral.emat"
 }
 GenericTerrainEntity VET_dev {
 }
