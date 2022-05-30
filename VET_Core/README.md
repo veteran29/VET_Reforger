@@ -13,3 +13,7 @@ Core addon with additional functionalities for the World Editor, components and 
 ### Worlds
 
 - VET_Dev - small test terrain/world for faster script development iteration
+
+### Workbench
+
+- Rendering of dynamically spawned AIGroup waypoints in the 3d space
